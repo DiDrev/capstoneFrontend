@@ -1,0 +1,31 @@
+.container{
+margin-top: 13vh;
+width:80%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.container>div{
+margin-bottom: 3vh;
+}
+
+p{
+justify-items: center;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.3rem;
+font-weight: 600;
+}
+
+#item_name{
+font-size: 1.6rem;
+font-weight: 400;
+text-decoration: underline;
+font-family: 'Limelight', sans-serif;
+}
+
+#item-description{
+font-size: 1.4rem;
+font-weight: bold;
+text-decoration: underline;
+}

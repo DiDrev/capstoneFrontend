@@ -1,0 +1,17 @@
+<div class="container">
+	<div *ngFor="let item of items">
+		<div *ngIf="item.type === 'hot' && item.category === 'soup'">
+			<p id="item_name">{{ item.name }}</p>
+			<p id="item_description">{{ item.description }}</p>
+			<p>Cup/Bowl</p>
+			<p>{{ item.price }}</p>
+		</div>
+	</div>
+	<div *ngFor="let item of items">
+		<div *ngIf="item.type === 'frozen' && item.category === 'soup'">
+			<p id="item_name">{{ item.name }}</p>
+			<p id="item_description">{{ item.description }}</p>
+			<p>{{ item.price }}/liter</p>
+		</div>
+	</div>
+</div>

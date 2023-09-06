@@ -1,0 +1,71 @@
+.container-fluid{
+	display: flex;
+}
+
+.card{
+	margin: 8vh auto;
+	font-weight: bold;
+	flex: 1;
+	text-align: center;
+	background: none;
+	border: none;
+	width: 30%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+}
+
+.card-title{
+	font-family: 'Limelight', sans-serif;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-decoration: underline;
+	margin-bottom: 2vh;
+}
+
+.card-text{
+	height: 14vh;
+}
+
+a{
+	color: var(--main-darkest-color);
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.btn{
+background-color: rgba(255, 248, 234, 0.438);
+border: 1px solid var(--main-darkest-color);
+width:60%;
+font-weight: bold;
+}
+
+.btn:hover{
+  background-color: var(--main-med-color);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.card-title{
+		font-family: 'Limelight', sans-serif;
+		font-size: 2.5vh;
+		font-weight: 300;
+		text-decoration: underline;
+		margin-bottom: 1vh;
+	}
+	
+	.card-body>p{
+		height: 12vh;
+		margin: 0.5vh;
+		font-size: 1.5vh;
+	}
+	.btn{
+		background-color: rgba(255, 248, 234, 0.438);
+		border: 1px solid var(--main-darkest-color);
+		width:100%;
+		font-weight: normal;
+		font-size: 2vh;
+		}
+}
