@@ -1,0 +1,35 @@
+.container{
+height: 25.5dvw;
+}
+
+footer{
+	bottom:0%;
+	left:0;
+}
+
+form{
+background-color: rgba(255, 255, 255, 0.5);
+padding: 3vh;
+border: 1px solid #312828;
+border-radius: 10px;
+margin: 7dvw;
+margin-top: 10dvw;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.5dvw;
+font-weight: 600;
+}
+
+button{
+width: 25%;
+margin: auto 10%;
+background-color: rgba(255, 255, 255, 0.8);
+font-weight: 600;
+}
+
+button:hover{
+	background-color: rgba(49, 40, 40, 0.7);
+}
+
+button:disabled{
+	background-color: rgba(255, 255, 255, 0.8);	
+}

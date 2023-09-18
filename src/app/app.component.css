@@ -1,110 +1,105 @@
-.container{
-	margin: 0;
-	padding: 0;
-	height: 100%;
+body{
+	bottom: 0;
 }
-
-.navbar-brand{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-}
-
-.nav-link{
-	margin: 0 4vh;
-}
-
-a{
-	font-family: 'Limelight';
-	font-size: 3.5vh;
-	color: var(--main-darkest-color);
-}
-
-a:hover{
-	color: var(--main-dark-color);
-	text-decoration: underline;
-	text-decoration-color: var(--main-dark-color);
-	transition-duration: 0.5s;
-}
-
-#logo{
-	margin:1vh 5vh;
-	height: 10vh;
-	opacity: 0.75;
-	border-radius: 0.75vh;
-}
-
-#banner{
-	width: 100%;
-	border-bottom: var(--hr);
-}
-
-#header{
+header{
+	position:absolute;
+	width: 100dvw;
+	top:0%;
+	left: 0%;
 	padding: 0;
 	margin: 0;
 	display:list-item;
-	height: 12vh;
-	background-color:  #9E7676;
-	border-bottom: 1px solid var(--main-darkest-color);
+	background-color: rgba(255, 255, 255, 0.4);
+	border-bottom: 1px solid black;
 }
 
-#footer{
-	padding: 0;
-	margin: 7.5vh 0;
-	height: 12vh;
-	background-color:  #9E7676;
-	border-top: 1px solid var(--main-darkest-color);
+.hamburger{
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
 }
 
-.social>p{
-	font-family: 'Montserrat', sans-serif;
-	color: var(--main-darkest-color);
-	margin: auto;
+.bar{
+	width: 25px;
+	height: 2px;
+	background-color: black;
+	margin: 4px 0;
 }
 
-.social>a{
-margin-right: 4vh;
-}
-
-.social_logo{
-	height: 6vh;
-	margin: 3vh 5vh;
-}
-
-@media (max-width: 768px) {
-#header, #footer{
-	height: 8vh;
-	padding: 0;
-}
-
-	.navbar-brand{
-	height: 6vh;
-	margin: 0 auto 2vh;
+#logo {
+	height: 4dvw;
+	border-radius: 5px;
+	opacity: 0.8;
+	margin: 0.75dvw;
 	}
-	
-	.nav-link{
+
+.nav-link{
+	padding: auto 1dvw;	
+	font-size: 1.5dvw;
+	font-family: 'Limelight';
+	color: black;
+}	
+
+.nav-link:hover{
+	text-decoration: underline;
+	transition-duration: 0.5s;
+}
+
+#admin{
+	background-color: transparent;
+	color: black;
+}
+
+#menu{
+	display: flex;
+	list-style: none;
 	margin: 0;
-	}
-	
-	a{
-	font-size: 2vh;
-	margin: 0;
-	}
-	
-	#logo {
-	height: 6vh;
-	}
-	
-	.social_logo {
-	height: 2vh;
-	margin: 1vh 1vh;
-	}
+}
+ 
+footer{
+	width: 100dvw;
+	bottom: 0;
+	left: 0vw;
+	margin-top: 5dvw;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-top: 1px solid black;
+	z-index: 1000vh;
+}
 
-	.social>p{
-		font-family: 'Montserrat', sans-serif;
-		color: var(--main-darkest-color);
-		font-size: 1.25vh;
+#social{
+	margin-left: 41%;
+}
+
+.social_logo {
+height: 4dvw;
+margin: 0.75dvw;
+}
+
+@media (max-width: 500px) {
+	#header, #footer{
 		margin: 0;
+		bottom: 0;
+	}
+	
+	.hamburger {
+		display: block;
+	}
+	
+	#menu {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 8vh;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.4);
+		padding: 0;
+	}
+	
+	#menu.active {
+		display: flex;
+		border: 1px solid black;
 	}
 }
  

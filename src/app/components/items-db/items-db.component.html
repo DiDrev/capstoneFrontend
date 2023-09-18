@@ -1,0 +1,67 @@
+
+<div class="wrapper">
+	<form [formGroup]="addItemForm" (ngSubmit)="createMenuItem()">
+		<table class="table">
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Description</th>
+				<th>Type</th>
+				<th>Category</th>
+				<th>Calories</th>
+				<th>Allergens</th>
+				<th></th>
+			</tr>
+			<tr *ngFor="let menuItem of item">
+				<td>{{menuItem.name}}</td>
+				<td>{{menuItem.price}}</td>
+				<td>{{menuItem.description}}</td>
+				<td>{{menuItem.type}}</td>
+				<td>{{menuItem.category}}</td>
+				<td>{{menuItem.calories}}</td>
+				<td>{{menuItem.allergens}}</td>
+				<td id="buttons"> 
+					<button type="button" class="btn btn-outline-dark">Edit</button>
+					<button type="button" class="btn btn-outline-dark" (click)="deleteItem(menuItem.name)">Delete</button>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="text" placeholder="Name" formControlName="name"></td>
+				<td><input type="number" placeholder="Price" formControlName="price"></td>
+				<td><input type="text" placeholder="Description" formControlName="description"></td>
+				<td>
+					<select id="type" formControlName="type">
+						<option value="">Type</option>
+						<option value="">hot</option>
+						<option value="">cold</option>
+						<option value="">frozen</option>
+					</select>
+				</td>
+				<td>
+					<select id="category" formControlName="category">
+						<option value="">Category</option>
+						<option value="">drink</option>
+						<option value="">sandwich</option>
+						<option value="">panini</option>
+						<option value="">soup</option>
+						<option value="">baked_item</option>
+						<option value="">breakfast</option>
+					</select>
+				</td>
+				<td><input type="number" placeholder="Calories" formControlName="calories"></td>
+				<td>
+					<select id="allergens" formControlName="allergens">
+						<option value="">Allergens</option>
+						<option value="">Y</option>
+						<option value="">N</option>
+					</select>
+				</td>
+				<td>
+					<button type="submit" class="btn btn-outline-dark" [disabled]="addItemForm.invalid">Add new item</button>
+					<button type="reset" class="btn btn-outline-dark">Reset</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<button class="btn btn-outline-dark" type="button" id="logoutBtn" (click)="logout()">Logout</button>
+</div>

@@ -11,22 +11,30 @@ import { BakeryComponent } from './components/bakery/bakery.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './components/admin-login/admin-login.component';
+import { MainComponent } from './components/main/main.component';
+import { AdminRegisterComponent } from './components/admin-register/admin-register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ItemsDBComponent } from './components/items-db/items-db.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+	 MainComponent,
     HomeComponent,
+	 NavbarComponent,
     DrinksComponent,
     SandwichesComponent,
     SoupsComponent,
-    BakeryComponent,
-    NavbarComponent,
-    AdminLoginComponent
+    BakeryComponent,    
+    AdminLoginComponent, AdminRegisterComponent, ItemsDBComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-	 HttpClientModule
+	 HttpClientModule,
+	 ReactiveFormsModule,
+	 FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

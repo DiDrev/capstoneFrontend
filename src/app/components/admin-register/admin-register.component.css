@@ -1,0 +1,26 @@
+form{
+	width: 50dvw;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 1dvw;
+	border: 1px solid #312828;
+	border-radius: 10px;
+	margin: 8dvw auto;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5dvw;
+	font-weight: 600;
+	}
+
+	button{
+	width: 50%;
+	margin: auto 25%;
+	background-color: rgba(255, 255, 255, 0.5);
+	font-weight: 600;
+	}
+	
+	button:hover{
+		background-color: rgba(49, 40, 40, 0.7);
+	}
+	
+	button:disabled{
+		background-color: rgba(255, 255, 255, 0.8);	
+	}

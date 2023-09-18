@@ -1,18 +1,4 @@
-:root{
-	--main-darkest-color: #312828;
-	--main-dark-color: #643843;
-	--main-med-color: #9E7676;
-	--main-light-color:#c7a4a4;
-	--main-lightest-color: #fff8ea;
-	--hr: 1px solid #312828;
-}
-
-
 body {
 	background-image: url(./assets/backgroundLighter.png), linear-gradient(#7c6464, #c7a4a4,#7c6464);
-	margin: 0;
-	padding: 0;
-	height: 100vh;
- }
-
-
+	width: 100vw;
+}

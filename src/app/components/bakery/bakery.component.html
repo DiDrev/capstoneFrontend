@@ -1,10 +1,10 @@
-<h5>Baked items encompass a wide range of delicious food products, from flaky pastries to moist cakes and tender cookies.</h5>
-<div class="contanier">
-	<div *ngFor="let item of items" class="container">
-		<div *ngIf="item.category === 'baked_item'">
-			<p id="item_name">{{ item.name }}</p>
-			<p id="item_description">{{ item.description }}. {{item.calories}} cal</p>
-			<p id="item_price">{{ item.price }}</p>
+<div class="wrapper">
+	<h5>Baked items encompass a wide range of delicious food products, from flaky pastries to moist cakes and tender cookies.</h5>
+		<div *ngFor="let item of items" class="container">
+			<div *ngIf="item.category === 'baked_item'">
+				<p id="item_name">{{ item.name }}</p>
+				<h5 id="item_description">{{ item.description }}. {{item.calories}} cal</h5>
+				<p id="item_price">{{ item.price }}</p>
+			</div>
 		</div>
-	</div>
 </div>

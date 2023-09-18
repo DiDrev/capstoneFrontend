@@ -1,11 +1,11 @@
-<h5>Try our delicious, perfectly made drinks</h5>
-<p>12oz/16oz</p>
-<div class="container">
-	<div *ngFor="let item of items" class="container">
-		<div *ngIf="item.category === 'drink'">
-			<p id="item_name">{{ item.name }}</p>
-			<p id="item_description">{{ item.description }} {{item.calories}} cal</p>
-			<p id="item_price">{{ item.price }}</p>
+<div class="wrapper">
+	<h5>Try our delicious, perfectly made drinks</h5>
+	<h5>12oz/16oz</h5>
+		<div class="container" *ngFor="let item of items">
+			<div *ngIf="item.category === 'drink'">
+				<p id="item_name">{{ item.name }}</p>
+				<h5 id="item_description">{{ item.description }} {{item.calories}} cal</h5>
+				<p id="item_price">{{ item.price }}</p>
+			</div>
 		</div>
-	</div>
 </div>

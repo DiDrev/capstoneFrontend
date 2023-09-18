@@ -2,15 +2,15 @@
 	<div *ngFor="let item of items">
 		<div *ngIf="item.type === 'hot' && item.category === 'soup'">
 			<p id="item_name">{{ item.name }}</p>
-			<p id="item_description">{{ item.description }}</p>
-			<p>Cup/Bowl</p>
+			<h5 id="item_description">{{ item.description }}</h5>
+			<h5>Cup/Bowl</h5>
 			<p>{{ item.price }}</p>
 		</div>
 	</div>
 	<div *ngFor="let item of items">
 		<div *ngIf="item.type === 'frozen' && item.category === 'soup'">
 			<p id="item_name">{{ item.name }}</p>
-			<p id="item_description">{{ item.description }}</p>
+			<h5 id="item_description">{{ item.description }}</h5>
 			<p>{{ item.price }}/liter</p>
 		</div>
 	</div>

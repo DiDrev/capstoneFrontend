@@ -3,7 +3,7 @@
 }
 
 .card{
-	margin: 8vh auto;
+	margin: 1dvw auto;
 	font-weight: bold;
 	flex: 1;
 	text-align: center;
@@ -11,23 +11,27 @@
 	border: none;
 	width: 30%;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.5dvw;
 }
 
 .card-title{
 	font-family: 'Limelight', sans-serif;
-	font-size: 1.3rem;
+	font-size: 1.75dvw;
 	font-weight: 600;
 	text-decoration: underline;
-	margin-bottom: 2vh;
+	margin-bottom: 2dvw;
 }
 
 .card-text{
-	height: 14vh;
+	height: 5dvw;
+}
+
+#navbar{
+	border-top: 1px solid black;
 }
 
 a{
-	color: var(--main-darkest-color);
+	color: black;
 	text-decoration: none;
 }
 
@@ -36,36 +40,14 @@ a:hover{
 }
 
 .btn{
-background-color: rgba(255, 248, 234, 0.438);
-border: 1px solid var(--main-darkest-color);
-width:60%;
+background-color: rgba(255, 255, 255, 0.5);
+border: 1px solid black;
+width: 15dvw;
 font-weight: bold;
+font-size: 1dvw;
 }
 
 .btn:hover{
-  background-color: var(--main-med-color);
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 768px) {
-	.card-title{
-		font-family: 'Limelight', sans-serif;
-		font-size: 2.5vh;
-		font-weight: 300;
-		text-decoration: underline;
-		margin-bottom: 1vh;
-	}
-	
-	.card-body>p{
-		height: 12vh;
-		margin: 0.5vh;
-		font-size: 1.5vh;
-	}
-	.btn{
-		background-color: rgba(255, 248, 234, 0.438);
-		border: 1px solid var(--main-darkest-color);
-		width:100%;
-		font-weight: normal;
-		font-size: 2vh;
-		}
+	text-decoration: none;
+	background-color: rgba(89, 69, 69, 0.5);
 }

@@ -1,38 +1,33 @@
-<nav class="navbar" id="header">
-	<div class="container-fluid">
-		<a class="navbar-brand" routerLink="/">
-			<img [src]="logo" alt="logo" id="logo">
-		</a>
-		<ul class="nav nav-pills">
-			<li class="nav-item">
-			  <a class="nav-link" href="#menus">Menus</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#home">Find us</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#social">Our media</a>
-			</li>
-		</ul>	
-	</div>
-</nav>
-
-<img class="img-fluid" [src]="banner" id="banner" alt="caffe_picture" >
-
-<app-home id="home"></app-home>
-
-<app-navbar id="menus"></app-navbar>
-
+<header>
+	<nav class="navbar" id="header">
+		 <div class="container">
+			  <a routerLink="main">
+					<img [src]="logo" alt="logo" id="logo">
+			  </a>
+			  <button type="button" id="menu-toggle" class="hamburger">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+			  </button>
+			  <ul class="nav nav-pills" id="menu">
+					<li class="nav-item">
+						 <a class="nav-link" href="#social">Media</a>
+					</li>
+					<li class="nav-item">
+						 <a class="nav-link">Soup recipes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" routerLink="/admin" routerLinkActive="active" id="admin">Administration</a>
+				  </li>					
+			  </ul>
+		 </div>
+	</nav>
+</header>
 <router-outlet></router-outlet>
-
-<nav class="navbar" id="footer">
-	<div class="container-fluid social">
+<footer>
 		<ul class="nav nav-pills" id="social">
-			<li class="nav-item"><a class="navbar-brand" href="https://www.facebook.com/" target="_blank"><img [src]="facebookLogo" alt="Facebook" class="social_logo"></a></li>
-			<li class="nav-item"><a class="navbar-brand" href="https://www.instagram.com/" target="_blank"><img [src]="instagramLogo" alt="Instagram" class="social_logo"></a></li>
-			<li><a class="navbar-brand" href="https://www.twitter.com/" target="_blank"><img [src]="twitterLogo" alt="Twitter_logo" class="social_logo"></a></li>
+			<li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><img [src]="facebookLogo" alt="Facebook" class="social_logo"></a></li>
+			<li><a href="https://www.instagram.com/primalgroundsyyc/" target="_blank" rel="noopener"><img [src]="instagramLogo" alt="Instagram" class="social_logo"></a></li>
+			<li><a href="https://www.twitter.com/" target="_blank" rel="noopener"><img [src]="twitterLogo" alt="Twitter_logo" class="social_logo"></a></li>
 		</ul>
-		<p>Made and managed by ©DiDre</p>
-		<a href="/admin" target="_self">Administrator login</a>
-	</div>
-</nav>
+</footer>

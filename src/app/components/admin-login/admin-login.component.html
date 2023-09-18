@@ -1,20 +1,18 @@
 
-<form action="action_page.php" method="post">
-	<div class="container">
-	  <label for="uname"><b>Username</b></label>
-	  <input type="text" placeholder="Enter Username" name="uname" required>
- 
-	  <label for="psw"><b>Password</b></label>
-	  <input type="password" placeholder="Enter Password" name="psw" required>
- 
-	  <button type="submit">Login</button>
-	  <label>
-		 <input type="checkbox" checked="checked" name="remember"> Remember me
-	  </label>
-	</div>
- 
-	<div class="container" style="background-color:#f1f1f1">
-	  <button type="button" class="cancelbtn">Cancel</button>
-	  <span class="psw">Forgot <a href="#">password?</a></span>
-	</div>
- </form>
+<div class="container">
+	<form [formGroup]="loginForm" (ngSubmit)="login()">
+
+		<div class="mb-3">
+			<label class="form-label" for="email">Email</label>
+			<input type="email" class="form-control" formControlName="email" id="email">
+		</div>
+		<div class="mb-3">
+			<label class="form-label" for="password">Password</label>
+			<input type="password" class="form-control" formControlName="password" id="password">
+		</div>
+
+		<button type="submit" class="btn btn-outline-dark" [disabled]="loginForm.invalid">Login</button>
+		<button type="submit" class="btn btn-outline-dark" routerLink="/register">Sign up</button>
+	</form>
+</div>
+<router-outlet></router-outlet>

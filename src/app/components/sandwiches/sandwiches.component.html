@@ -1,19 +1,21 @@
-<h5>Artisan paninis are expertly crafted grilled sandwiches made with high-quality, hand-selected ingredients that offer a harmonious blend of flavors and textures.</h5>
-<div class="contanier">
-	<div *ngFor="let item of items" class="container">
-		<div *ngIf="item.category === 'panini'">
-			<p id="item_name">{{ item.name }}</p>
-			<p id="item_description">{{ item.description }}. {{item.calories}} cal</p>
-			<p id="item_price">{{ item.price }}</p>
+	<div class="wrapper">
+		<h5>Artisan paninis are expertly crafted grilled sandwiches made with high-quality, hand-selected ingredients that offer a harmonious blend of flavors and textures.</h5>
+		<div class="contanier">
+			<div *ngFor="let item of items" class="container">
+				<div *ngIf="item.category === 'panini'">
+					<p id="item_name">{{ item.name }}</p>
+					<h5 id="item_description">{{ item.description }}. {{item.calories}} cal</h5>
+					<p id="item_price">{{ item.price }}</p>
+				</div>
+			</div>
+			<h5>Deli sandwiches are a delectable combination of freshly sliced meats, cheeses, condiments, and vegetables, served between slices of our signature crack rye and molases bread.</h5>
+			<h5>Half / Full</h5>
+			<div *ngFor="let item of items" class="container">
+				<div *ngIf="item.category === 'sandwich'">
+					<p id="item_name">{{ item.name }}</p>
+					<h5 id="item_description">{{ item.description }}. {{item.calories}} cal</h5>
+					<p id="item_price">{{ item.price }}</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<h5>Deli sandwiches are a delectable combination of freshly sliced meats, cheeses, condiments, and vegetables, served between slices of our signature crack rye and molases bread.</h5>
-	<p>Half / Full</p>
-	<div *ngFor="let item of items" class="container">
-		<div *ngIf="item.category === 'sandwich'">
-			<p id="item_name">{{ item.name }}</p>
-			<p id="item_description">{{ item.description }}. {{item.calories}} cal</p>
-			<p id="item_price">{{ item.price }}</p>
-		</div>
-	</div>
-</div>
